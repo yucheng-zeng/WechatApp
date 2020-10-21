@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view class="scroll-container">
+    <swiper class='swiper' indicator-dots="true" duration="500" bindchange="swiperChange">
+      <block wx:for="{{imglist}}" wx:key="*this">
+        <swiper-item>
+          <image bindtap="previewImgSwiper" src="{{item}}" class='img' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </scroll-view>
+
+  <view class="uploader">
+    <view class="view-wapper1">
+      <button class="uploader-avatar" style="background-image: url({{avatarUrl}})" size="default"
+        bindtap="previewImgUploader"></button>
+    </view>
+    <view class="view-wapper2">
+      <button class="uploader-button" bindtap="doUpload">上传图片</button>
+    </view>
+    <view class="view-wapper3">
+      <button class="transfer" bindtap="testFunction">
+        转换
+      </button>
+    </view>
+  </view>
+
+  <view class="result-container">
+    <view class='img-wapper1'>
+      <image class="result-img" hidden="{{result.hidden}}" src="{{result.url}}" bindtap="previewImgResult"
+        mode="widthFix" />
+    </view>
+  </view>
+</view>

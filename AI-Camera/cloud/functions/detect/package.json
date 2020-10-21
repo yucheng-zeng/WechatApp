@@ -1,0 +1,16 @@
+{
+  "name": "detect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "promise": "^8.1.0",
+    "tencentcloud-sdk-nodejs": "^3.0.264",
+    "wx-server-sdk": "^2.3.2"
+  }
+}
