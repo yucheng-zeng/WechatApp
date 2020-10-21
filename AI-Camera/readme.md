@@ -45,7 +45,7 @@ npm install tencentcloud-sdk-nodejs --save
   const Credential = tencentcloud.common.Credential;
   const ClientProfile = tencentcloud.common.ClientProfile;
   const HttpProfile = tencentcloud.common.HttpProfile;
-  let cred = new Credential("AKIDbvxiHX0AbnnVv7p8G6biX7QjaNUenHfv", "INFyINF6kGE1Vk2Lq5B2b3EJRKzKOzHS");
+  let cred = new Credential("****", "****");
   let httpProfile = new HttpProfile();
   httpProfile.endpoint = "iai.tencentcloudapi.com";
   let clientProfile = new ClientProfile();

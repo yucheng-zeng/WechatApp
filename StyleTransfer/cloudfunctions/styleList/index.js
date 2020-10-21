@@ -5,13 +5,13 @@ const Promise = require('promise');
 
 // 创建实例
 const cos = new COS({
-  SecretId: 'AKIDbvxiHX0AbnnVv7p8G6biX7QjaNUenHfv',
-  SecretKey: 'INFyINF6kGE1Vk2Lq5B2b3EJRKzKOzHS',
+  SecretId: '****',
+  SecretKey: '***',
 });
 // 云函数入口函数
 const getUrl = function (key) {
   var url = cos.getObjectUrl({
-    Bucket: 'yuchengzeng-1303825104',
+    Bucket: '******',
     Region: 'ap-nanjing',
     Key: key,
     Sign: 'false'
@@ -25,7 +25,7 @@ exports.main = async (event, context) => {
     var promise = new Promise((resolve, reject) => 
     {
       cos.getBucket({
-        Bucket: 'yuchengzeng-1303825104',
+        Bucket: '****',
         Region: 'ap-nanjing',
         Prefix: 'style/s',
         Delimiter: '/',
